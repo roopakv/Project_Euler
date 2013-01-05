@@ -22,6 +22,8 @@ extern "C" {
 int problem1();
 int problem2();
 int problem3();
+int problem4();
+int problem5();
 
 #endif	/* PROBLEMS_H */
 

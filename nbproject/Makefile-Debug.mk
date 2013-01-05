@@ -36,8 +36,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/problem1.o \
+	${OBJECTDIR}/problem5.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/problem3.o \
+	${OBJECTDIR}/problem4.o \
 	${OBJECTDIR}/problem2.o
 
 
@@ -70,6 +72,11 @@ ${OBJECTDIR}/problem1.o: problem1.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem1.o problem1.cpp
 
+${OBJECTDIR}/problem5.o: problem5.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem5.o problem5.cpp
+
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -79,6 +86,11 @@ ${OBJECTDIR}/problem3.o: problem3.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem3.o problem3.cpp
+
+${OBJECTDIR}/problem4.o: problem4.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem4.o problem4.cpp
 
 ${OBJECTDIR}/problem2.o: problem2.cpp 
 	${MKDIR} -p ${OBJECTDIR}
