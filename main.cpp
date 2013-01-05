@@ -8,13 +8,16 @@
 #include <cstdlib>
 #include <iostream>
 #include "problems.h"
+#include <limits>
 using namespace std;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    problem1();
+    
+    problem3();
+    
     return 0;
 }
 

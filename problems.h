@@ -20,6 +20,8 @@ extern "C" {
 #endif
 
 int problem1();
+int problem2();
+int problem3();
 
 #endif	/* PROBLEMS_H */
 
