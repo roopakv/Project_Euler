@@ -7,13 +7,14 @@
 
 #include <cstdlib>
 #include <iostream>
+#include "problems.h"
 using namespace std;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    cout<<"Hello World";
+    problem1();
     return 0;
 }
 
