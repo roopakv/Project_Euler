@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include "problems.h"
 using namespace std;
-int problem5()
+int problem6()
 {
     long long k=10;
     long long sum=0;

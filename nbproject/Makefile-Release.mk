@@ -38,8 +38,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/problem1.o \
 	${OBJECTDIR}/problem5.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/problem6.o \
 	${OBJECTDIR}/problem3.o \
-	${OBJECTDIR}/problem4.o \
+	${OBJECTDIR}/problem8.o \
+	${OBJECTDIR}/problem7.o \
 	${OBJECTDIR}/problem2.o
 
 
@@ -82,15 +84,25 @@ ${OBJECTDIR}/main.o: main.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
 
+${OBJECTDIR}/problem6.o: problem6.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem6.o problem6.cpp
+
 ${OBJECTDIR}/problem3.o: problem3.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem3.o problem3.cpp
 
-${OBJECTDIR}/problem4.o: problem4.cpp 
+${OBJECTDIR}/problem8.o: problem8.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem4.o problem4.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem8.o problem8.cpp
+
+${OBJECTDIR}/problem7.o: problem7.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem7.o problem7.cpp
 
 ${OBJECTDIR}/problem2.o: problem2.cpp 
 	${MKDIR} -p ${OBJECTDIR}

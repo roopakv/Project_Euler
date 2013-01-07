@@ -24,6 +24,9 @@ int problem2();
 int problem3();
 int problem4();
 int problem5();
+int problem6();
+int problem7();
+int problem8();
 
 #endif	/* PROBLEMS_H */
 

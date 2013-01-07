@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include "problems.h"
 using namespace std;
-int problem4()
+int problem5()
 {
     long long k=20;
     int flag=0;
