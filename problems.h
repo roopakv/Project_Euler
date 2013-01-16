@@ -27,6 +27,11 @@ int problem5();
 int problem6();
 int problem7();
 int problem8();
+int problem10();
+int problem13();
+int problem14();
+int problem17();
+int myrandom();
 
 #endif	/* PROBLEMS_H */
 

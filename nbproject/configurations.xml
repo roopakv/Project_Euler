@@ -15,12 +15,17 @@
                    projectFiles="true">
       <itemPath>main.cpp</itemPath>
       <itemPath>problem1.cpp</itemPath>
+      <itemPath>problem10.cpp</itemPath>
+      <itemPath>problem13.cpp</itemPath>
+      <itemPath>D:/development/ProjectEuler/problem14.cpp</itemPath>
+      <itemPath>problem17.cpp</itemPath>
       <itemPath>problem2.cpp</itemPath>
       <itemPath>problem3.cpp</itemPath>
       <itemPath>problem5.cpp</itemPath>
       <itemPath>problem6.cpp</itemPath>
       <itemPath>problem7.cpp</itemPath>
       <itemPath>problem8.cpp</itemPath>
+      <itemPath>D:/development/ProjectEuler/random.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

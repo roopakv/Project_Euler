@@ -16,7 +16,7 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-    problem7();
+    problem14();
     
     return 0;
 }

@@ -38,10 +38,15 @@ OBJECTFILES= \
 	${OBJECTDIR}/problem1.o \
 	${OBJECTDIR}/problem5.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/problem10.o \
 	${OBJECTDIR}/problem6.o \
 	${OBJECTDIR}/problem3.o \
+	${OBJECTDIR}/problem13.o \
+	${OBJECTDIR}/_ext/723857475/random.o \
 	${OBJECTDIR}/problem8.o \
 	${OBJECTDIR}/problem7.o \
+	${OBJECTDIR}/problem17.o \
+	${OBJECTDIR}/_ext/723857475/problem14.o \
 	${OBJECTDIR}/problem2.o
 
 
@@ -84,6 +89,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
 
+${OBJECTDIR}/problem10.o: problem10.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem10.o problem10.cpp
+
 ${OBJECTDIR}/problem6.o: problem6.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -94,6 +104,16 @@ ${OBJECTDIR}/problem3.o: problem3.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem3.o problem3.cpp
 
+${OBJECTDIR}/problem13.o: problem13.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem13.o problem13.cpp
+
+${OBJECTDIR}/_ext/723857475/random.o: /cygdrive/D/development/ProjectEuler/random.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/723857475
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/723857475/random.o /cygdrive/D/development/ProjectEuler/random.cpp
+
 ${OBJECTDIR}/problem8.o: problem8.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -103,6 +123,16 @@ ${OBJECTDIR}/problem7.o: problem7.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem7.o problem7.cpp
+
+${OBJECTDIR}/problem17.o: problem17.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/problem17.o problem17.cpp
+
+${OBJECTDIR}/_ext/723857475/problem14.o: /cygdrive/D/development/ProjectEuler/problem14.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/723857475
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/723857475/problem14.o /cygdrive/D/development/ProjectEuler/problem14.cpp
 
 ${OBJECTDIR}/problem2.o: problem2.cpp 
 	${MKDIR} -p ${OBJECTDIR}
